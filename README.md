@@ -30,3 +30,6 @@ response JSON should something like:
 ```
 curl -s -u UNAME:API_TOKEN "http://JENKINS_URL/job/<JOB_NAME>/config.xml > <JOB_NAME>_config.xml
 ```
+
+### Beware of them spaces
+Job names that have spaces in them need to be treated with extra care. Make sure to add `%20` in place of space in the URL and enclose the `<JOB_NAME>_config.xml` inside quotes.
